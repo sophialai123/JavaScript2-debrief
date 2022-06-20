@@ -12,3 +12,25 @@
 // Come back to challenges if rest of work is all complete
 // Challenge - Use a for loop through the array to search for ID = 205 and update Sue’s name to Susan
 // Challenge - Remove an item from the middle of the array. ID=204
+
+
+let nestedArray = [[201, "Sophia", 26], [202, "Barbara", 31], [203, "David", 22], [204, "Alex", 35], [205, "Sue", 24]];
+console.log(nestedArray.length);
+console.log(nestedArray[nestedArray.length - 1]);
+nestedArray.push([206, "Joh", 45]);
+nestedArray.shift(nestedArray[0]);
+console.log(nestedArray)
+
+
+//Challenges
+for (let i = 0; i < nestedArray.length; i++) {
+  if (nestedArray[i][0] === 205) {
+    nestedArray[i][1] = "Susan";
+    console.log(nestedArray);
+
+  } else if (nestedArray[i][0] === 204) {
+    //nestedArray.splice(i, 1); // remove the id = 204
+  }
+  console.log(nestedArray);
+
+}
