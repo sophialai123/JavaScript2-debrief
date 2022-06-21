@@ -29,7 +29,8 @@ for (let i = 0; i < nestedArray.length; i++) {
     console.log(nestedArray);
 
   } else if (nestedArray[i][0] === 204) {
-    //nestedArray.splice(i, 1); // remove the id = 204
+    nestedArray.splice(i, 1); // remove the id = 204
+    i--; // becuase splice is removed one item and so the length is one less,so i--;
   }
   console.log(nestedArray);
 
