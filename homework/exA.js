@@ -13,6 +13,8 @@ let bubbleSort = (inputArr) => {
                 let tmp = inputArr[j];
                 inputArr[j] = inputArr[j + 1];
                 inputArr[j + 1] = tmp;
+                console.log(tmp)
+                console.log(inputArr[j + 1])
             }
         }
     }
